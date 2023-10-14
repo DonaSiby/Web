@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function printme(unknown){
+      document.write("<br/>we got",unknown);
+    }
+    var array1 =["cat","dog","rat","bat","mat"];
+    document.write("<br/>Array 1 = ",array1);
+    var array2 = new Array("bird","fish","lion","tiger","elephant");
+      document.write("<br/>Array 2 = ",array2);
+      var x = 1
+      printme(array1);
+      printme(array2[1]);
+      printme(x)
+      array1[x]="lion";
+      printme(array1);
+  </script>
+</body>
+</html>

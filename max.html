@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/Javascript">
+    var no1 = window.prompt("No 1","");
+    var no2 = window.prompt("No 2","");
+    var no3 = window.prompt("No 3","");
+    var x = parseFloat(no1);
+    var y = parseFloat(no2);
+    var z = parseFloat(no3);
+    var maxValue = maximum(x,y,z);
+      document.writeln("<p>First Number: "+x+"</p>" +
+      "<p>Second Number: "+y+"</p>" +  "<p>Third Number: "+z+"</p>"
+      +"<p>Maximum is: "+maxValue+"</p>")
+      function maximum(x,y,z) {
+        return Math.max(x,Math.max(y,z));  
+      }
+  </script>
+  
+</body>
+</html>
