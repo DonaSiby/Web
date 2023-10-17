@@ -1,0 +1,26 @@
+
+em { font-weight: bold;
+    color: black;}
+/* h1{font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt} */
+body b i{
+    font-size: 50px;
+}
+p.ques{
+    font-size: medium;
+    color: blue;
+}
+p.ans{
+    font-size: large;
+    color: blueviolet;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+#section14{
+    font-size: 20;
+    color: aqua;
+}

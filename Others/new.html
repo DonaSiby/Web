@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background_image{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        .foreground_image{
+            position: absolute;
+            top: 25px;
+            left: 100px;
+            z-index: 2;
+        }
+        .text{
+            position: absolute;
+            top: 25px;
+            left: 100px;
+            z-index:3;
+            font-size: 20pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="minar.jpg"class="background_image"
+        alt="First positioned image"/>
+    </p>
+    <p>
+        <img src="taj.jpg"class="foreground_image"
+        alt="Second positioned image"/>
+    </p>
+    <p class="text">Positioned Text</p>
+</body>
+</html>
