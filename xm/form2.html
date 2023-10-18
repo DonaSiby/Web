@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Registration Form</title>
+  </head>
+  <body>
+    <h1>Job Registration Form</h1>
+    <form action="submit_registration.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea
+      ><br /><br />
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" required /><br /><br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+      <label>Sex:</label>
+      <input type="radio" id="male" name="sex" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="sex" value="Female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="sex" value="Other" />
+      <label for="other">Other</label><br /><br />
+      <label>Areas of Interest:</label><br />
+      <input type="checkbox" id="it" name="interest[]" value="IT" />
+      <label for="it">IT</label><br />
+      <input type="checkbox" id="sales" name="interest[]" value="Sales" />
+      <label for="sales">Sales</label><br />
+      <input
+        type="checkbox"
+        id="marketing"
+        name="interest[]"
+        value="Marketing"
+      />
+      <label for="marketing">Marketing</label><br />
+      <input type="checkbox" id="finance" name="interest[]" value="Finance" />
+      <label for="finance">Finance</label><br /><br />
+      <label for="experience">Experience:</label>
+      <select id="experience" name="experience">
+        <option value="0-1 years">0-1 years</option>
+        <option value="1-3 years">1-3 years</option>
+        <option value="3-5 years">3-5 years</option>
+        <option value="5+ years">5+ years</option></select
+      ><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
