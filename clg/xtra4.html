@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Javascript HTML DOM</h2>
+  <h3>Replace an HTML element</h3>
+  <P>Add a new HTML Element</P>
+  <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+  </div>
+    <button onclick="myFunction()">Replace Element</button>
+  <script>
+    function myFunction(){
+      const parent = document.getElementById("div1");
+      const child = document.getElementById("p1");
+      const para = document.createElement("p");
+      const node = document.createTextNode("This is new para.");
+      para.appendChild(node);
+      parent.replaceChild(para,child);
+      document.getElementById("p1").replaceWith("p2")
+    }
+  </script>
+</body>
+</html>
+
