@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>My first paragraph</p>
+  <p class="main">My first main paragraph</p>
+  <p class="main">My second main paragraph</p>
+  <a href="#" onclick="test()">Link</a>
+  <a href="#" onclick="test1()">Link2</a>
+
+  <script type="text/javascript">
+    var para = document.querySelector("p.main");
+    var allpara = document.querySelectorAll("p.main");
+    function test() 
+    {
+      para.innerHTML = "I changed my paragraph.";
+    }
+    function test1()
+    {
+      allpara.forEach(function (elem) 
+      {
+        elem.innerHTML = "All my paragraphs changed.";
+      });
+    }
+  </script>
+</body>
+</html>
