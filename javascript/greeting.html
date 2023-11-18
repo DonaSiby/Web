@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greetings</title>
+  <script type="text/javascript">
+    function greeting()
+    {
+      var name = document.form1.fullname.value;
+      var age = document.form1.age.value;
+      alert("Hello " +name+ " u are " +age+ " years old.");
+      document.writeln("Hello " + name + " u are " + age + " years old.")
+    }
+  </script>
+</head>
+<body>
+  <form name="form1">
+    <h1 align="center">FORM</h1>
+    <table align="center">
+      <tr>
+        <td align="left">Name : </td>
+        <td align="right"><input type="text" name="fullname"></td>
+      </tr>
+      <tr>
+        <td align="left">Age :</td>
+        <td align="right"><input type="text" name="age"></td>
+      </tr>
+      <tr>
+        <td><br><input type="submit" name="Submit" onclick="greeting()"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
