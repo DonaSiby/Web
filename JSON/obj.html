@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var myObj ={
+      "name": "John",
+      "age": 31,
+      "cars": {"car1":"ford","car2":"BMW"}
+    }
+    for (var key in myObj){
+      document.write(key+"="+myObj[key]+"<br>");
+    }
+    for (var key in myObj.cars){
+      if(myObj.cars.hasOwnProperty(key)){
+        document.write(key + "=" + myObj.cars[key] + "<br>");
+      }
+    }
+  </script>
+</body>
+</html>

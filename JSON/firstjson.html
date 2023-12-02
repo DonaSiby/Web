@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Accessing json using javascript</h2>
+  <p id="demo"></p>
+  <script>
+    var myObj = {
+      "name" : "John",
+      "age" : 31,
+      "city" : "NewYork",
+      "hobby" : ["Reading","Singing"],
+    };
+    document.getElementById("demo").innerHTML = myObj.name + "<br/>" +myObj.age+ "<br/>"
+    for (x in myObj)
+    {
+    document.write(x+"="+myObj[x]+"<br/>")
+    }
+  </script>
+</body>
+</html>
